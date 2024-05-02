@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block body %} 
+
+{% if custom_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css + '.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css2 + '.css')}}">
+
+{% endif %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo List</title>
+</head>
+<body>
+    <div class="todocountinar">
+        
+        <div class="boxcountaner">
+        <div class="box" id="todo">
+            <h3 class="heading">ToDos</h3>
+            <p class="task" draggable="true">Django</p>
+            <p class="task" draggable="true">React</p>
+            <p class="task" draggable="true">js</p>
+            <p class="task" draggable="true">php</p>
+            <p class="task" draggable="true">reall</p>
+            <p class="task" draggable="true">sql</p>
+        </div>
+    
+        <div class="box" id="to">
+            <h3 class="heading">Drop Here</h3>
+            
+        
+        </div>
+    </div>
+    </div>
+
+<script src="{{ url_for('static', filename='JavaScrept/Math_learn.js')}}"></script>
+
+
+
+{% endblock %}

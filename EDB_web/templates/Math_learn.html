@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% block body %} 
+
+
+
+{% if custom_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/' + custom_css + '.css')}}">
+
+{% endif %}
+
+<div class="menu">
+    <ul>
+      <li><a href="Math_Learn_dobel.html">الارقام الزوجية و الفردية</a></li>
+      <li><a href="#">قواعد الأساسية</a></li>
+      <li><a href="#">تعلم و لعب</a></li>
+      <li><a href="#">testi</a></li>
+      <li><a href="#">طريق التعليم</a></li>
+      <li><a href="#">قواعد الأساسية</a></li>
+      <li><a href="#">تعلم و لعب</a></li>
+      <li><a href="#">testi</a></li>
+      <li><a href="#">طريق التعليم</a></li>
+      <li><a href="#">قواعد الأساسية</a></li>
+      <li><a href="#">تعلم و لعب</a></li>
+      <li><a href="#">testi</a></li>
+    </ul>
+  </div>
+{% endblock %}

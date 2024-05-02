@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    font-family:'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: scroll;
+    background-image:url(images/istockphoto-1170650529-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.todocountinar{
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    border: 3px solid black;
+    border-radius: 7px;
+    padding: 15px;
+}
+.add-form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+#todoinput{
+    padding: 5px 10px;
+    width: 75%;
+    border-radius: 5px;
+}
+#todobin{
+    width: 23%;
+    padding: 5px 7px;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+}
+#todobin:hover{
+    background-color: rgb(87, 28, 53);
+    color: aliceblue;
+}
+.boxcountaner{
+    margin-top: 15px;
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+}
+.box{
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+.task{
+    background-color: rgb(103, 53, 67);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid black;
+    cursor: move;
+}
+.task.is-dragging{
+    background-color: gray;
+    color: azure;
+}

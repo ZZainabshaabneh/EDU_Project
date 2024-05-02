@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Math pro</title>
+    <link rel="stylesheet" href="/flaskapps/templates/frontend/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Nav_bar -->
+    <div class="container" dir="ltr">
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <div dir="ltr" class="col-md-3 mb-2 mb-md-0 text-end">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap">
+                        <use xlink:href="#bootstrap" />
+                    </svg>
+                </a>
+                <a href="layout.html" id="elLogo" accesskey="1">
+                    <img src="{{ url_for('static', filename='images/img9.jpeg') }}" alt="تعلم اللغات " width="30%" />
+                </a>
+            </div>
+
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-secondary">الرئيسية </a></li>
+                <li><a href="#" class="nav-link px-2">المميزات </a></li>
+                <li><a href="#" class="nav-link px-2">الدفع </a></li>
+                <li><a href="#" class="nav-link px-2">أسئلة وأجوبة </a></li>
+                <li><a href="#" class="nav-link px-2">من نحن </a></li>
+            </ul>
+
+            <div class="col-md-3 text-start">
+                <button type="button" class="btn btn-outline-primary me-2">
+                    <a href="login.html">تسجيل الدخول</a>
+                </button>
+                <button type="button" class="btn btn-primary">
+                    <a href="signup.html" style="color: white">انشاء حساب </a>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <!-- header -->
+    <h2 class="h2_titel">الصفحة تعلم الرياضيات</h2>
+
+    <div class="content-wrapper">
+      <!-- UL list -->
+      <div class="menu">
+        <ul>
+          <li><a href="Math_learn.html">طريق التعليم</a></li>
+          <li><a href="#">قواعد الأساسية</a></li>
+          <li><a href="#">تعلم و لعب</a></li>
+          <li><a href="Math_test.html">testi</a></li>
+        </ul>
+      </div>
+
+
+      <!-- حاوية العناصر -->
+      <div class="math-content-container">
+        <div class="mokaddimaa">
+          <p>
+            مرحبًا بكم في كورس تعلم الرياضيات، الدورة المثالية لكل من يرغب في بناء أساس قوي ومتين في الرياضيات أو تعزيز مهاراته الحالية.
+            سواء كنت طالبًا يسعى لتحسين أدائه الأكاديمي، أو معلمًا يبحث عن طرق جديدة وفعالة لشرح المفاهيم الرياضية،
+            أو حتى مهندسًا يريد تجديد معرفته بالأساسيات، فهذا الكورس مصمم خصيصًا لك.
+          </p>
+        </div>
+        <div class="main_math_video">
+          <p>
+            في هذه الدورة، سنبدأ رحلتنا من الأساسيات مرورًا بالمفاهيم الأكثر تقدمًا، شارحين كل موضوع بطريقة واضحة ومبسطة.
+            ستتعلم كيفية التعامل مع الأرقام والعمليات الحسابية الأساسية، الجبر، الهندسة، وصولًا إلى الإحصاء والتفاضل والتكامل.
+            لا نقتصر فقط على تقديم المعلومات، بل نهدف إلى جعلك تفهم كيف ولماذا تعمل الرياضيات بهذه الطريقة،
+            من خلال تقديم أمثلة حية وتطبيقات عملية تجعل التعلم ممتعًا ومفيدًا.
+          </p>
+
+        </div>
+          <a target="_blank" href="https://youtu.be/9ESA9owvmGM?si=8ZAjxJBTS1r2OPQv">
+              <img class="math_main_video" src="https://academy.hsoub.com/learn/assets/images/courses/artificial-intelligence.png" alt="" />
+          </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+
+/* =================================================================*/
+
+/* إعادة تعيين بعض الأنماط الافتراضية لضمان تناسق المظهر عبر المتصفحات */
+body, h2, ul, li {
+  margin: 0; /* إزالة الهامش الافتراضي */
+  padding: 0; /* إزالة الحشو الافتراضي */
+}
+
+/* تعيين الأنماط للقائمة */
+.menu ul {
+  list-style-type: none; /* إزالة علامات القائمة */
+  padding: 0; /* إزالة الحشو */
+  margin: 0px 0px 0px 20px; /* إزالة الهامش */
+}
+
+.menu li {
+  position: relative; /* للسماح بتحديد الموضع النسبي للعناصر الزائفة */
+  padding: 25px 15px; /* تحديد الحشو لكل عنصر */
+  margin-bottom: 10px; /* إضافة هامش أسفل كل عنصر للفصل بين العناصر */
+  background-color: rgb(21, 21, 208); /* تعيين لون الخلفية */
+  color: #ffffff; /* تعيين لون النص */
+  border-radius: 5px; /* تقريب الزوايا */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7); /* إضافة ظل للعنصر */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* تحديد تأثير الانتقال للتحويل والظل */
+  cursor: pointer; /* تغيير شكل المؤشر عند التمرير فوق العنصر */
+  text-align: center;
+}
+
+.menu li:hover {
+  background-color: #88976d; /* تغيير لون الخلفية عند تمرير المؤشر */
+  color: #043eee; /* تغيير لون النص عند تمرير المؤشر */
+  transform: translateY(-2px); /* تحريك العنصر للأعلى قليلًا عند تمرير المؤشر */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.9); /* تغيير ظل العنصر ليصبح أكثر وضوحًا */
+}
+
+.menu li::before {
+  content: ""; /* إضافة محتوى زائف */
+  position: absolute; /* تحديد الموضع المطلق للعنصر الزائف */
+  top: 0; /* تعيين العنصر الزائف ليبدأ من الأعلى */
+  left: 0; /* تعيين العنصر الزائف ليبدأ من اليسار */
+  width: 0; /* بداية عرض العنصر الزائف */
+  height: 100%; /* ارتفاع العنصر الزائف ليغطي العنصر بالكامل */
+  background-color: rgba(170, 210, 49, 0.833); /* لون الخلفية للعنصر الزائف */
+  border-radius: 5px; /* تقريب زوايا العنصر الزائف */
+  transition: width 0.3s ease-in-out; /* تأثير انتقال لتغيير العرض */
+  z-index: -1; /* تحديد مستوى الطبقة ليكون خلف النص */
+}
+
+.menu li:hover::before {
+  width: 100%; /* تغيير عرض العنصر الزائف ليغطي العنصر بالكامل عند تمرير المؤشر */
+}
+
+.menu a {
+  text-decoration: none; /* إزالة التسطير من الروابط */
+  color: inherit; /* اعتماد لون النص من العنصر الأب */
+  display: block; /* جعل الروابط تشغل مساحة العنصر بالكامل */
+}
+
+/* تنظيم المحتوى الرئيسي باستخدام Flexbox */
+.content-wrapper {
+  display: flex;
+  justify-content: center; /* محاذاة العناصر أفقيًا في المنتصف */
+  align-items: flex-start; /* محاذاة العناصر من الأعلى */
+  flex-wrap: wrap; /* السماح للعناصر بالانتقال إلى السطر التالي إذا لزم الأمر */
+}
+
+.menu {
+  flex: 1 1 auto; /* السماح للقائمة بالتمدد والانكماش وفقًا لمحتواها */
+  margin-right: 20px; /* إضافة هامش من اليمين */
+}
+
+/* ===================================End Lest===========================================*/ 
+
+.h2_titel {
+  text-align: center; /* محاذاة النص إلى المنتصف */
+  font-size: 45px; /* تحديد حجم الخط */
+  margin: 40px 0; /* إضافة هامش أعلى وأسفل العنوان للفصل بين العناصر */
+  padding: 10px; /* إضافة حشو حول النص */
+  color: #333; /* تحديد لون النص */
+  font-weight: bold; /* جعل النص غامقًا */
+}
+
+
+.math-content-container {
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر بالطول */
+  align-items: center; /* محاذاة العناصر في المنتصف */
+  flex: 3 1 auto; /* السماح للحاوية بالتمدد والانكماش ولكن مع تفضيل أخذ مساحة أكبر */
+}
+
+.mokaddimaa {
+  padding: 20px; /* تحديد الحشو للعناصر */
+  background-color: rgba(170, 210, 49, 0.833); /* تعيين لون الخلفية */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل */
+  border-radius: 20px; /* تقريب الزوايا */
+  text-align: center; /* محاذاة النص في المنتصف */
+  width: 1000px; /* التحكم في الحد الأقصى لعرض العناصر */
+  margin: 10px;
+  font-size: 25px;
+}
+
+.main_math_video {
+  padding: 20px; /* تحديد الحشو للعناصر */
+  background-color: rgba(142, 97, 214, 0.833); /* تعيين لون الخلفية */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5); /* إضافة ظل */
+  border-radius: 20px; /* تقريب الزوايا */
+  text-align: center; /* محاذاة النص في المنتصف */
+  width: 1000px; /* التحكم في الحد الأقصى لعرض العناصر */
+  margin: 10px;
+  left: 50%;
+  font-size: 25px;
+}
+
+.math_main_video {
+  width: 500px; /* التحكم في الحد الأقصى لعرض الصورة */
+  height: auto; /* الحفاظ على نسب أبعاد الصورة */
+  margin-bottom: 40px;
+}
+
+  
+</style>
